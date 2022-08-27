@@ -1,0 +1,45 @@
+    <header style="flex-direction: row;" class="display-flex justify-space-between align-center p-2"></header>
+    <h1>
+        <a href="/home">Home</a>
+      
+ 
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <button class="no-button" id="logout">Logout</button>
+        {{else}}
+       <a style="text-decoration: underline;" id="login"  href="/login">Login</a>
+        {{/if}}
+      
+     </h1>
+    </header>
+<div id='blog1' class="col-md-7">
+  <h3 style="background-color:rgb(115, 104, 148)" id="heading1">{{name}}</h3>
+  <br>
+  <h3 id="heading">{{description}}</h3>
+  {{!-- <p>{{date_created}}</p> --}}
+   </div>
+   <br>
+   <br>
+   <div id="comment" class="col-md-7">
+    <input type="text" id="tdesc" name="tdesc"></input>
+    <br><br>
+    <button id="addComment">Add Comments</button>
+   </div>
+   <br>
+   <div class="flex-column justify-space-around"></div>
+    {{#each comments as |comment|}}
+    <div id='userpost' class="col-md-7">
+        <p>{{comment.comment_text}}</span></p> 
+        <h4 value={{user_id}}>{{user.name}}</h4>
+        
+        
+    </div>  
+    </div>
+         {{/each}}
+       
+        
+  
+    
+
+        
+<script src='/js/comment.js'></script>

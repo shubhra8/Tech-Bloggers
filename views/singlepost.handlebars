@@ -1,0 +1,25 @@
+    <header style="flex-direction: row;" class="display-flex justify-space-between align-center p-2"></header>
+    <h1>
+        <a style="text-decoration: underline;" href="/home">Home</a>
+      
+ 
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <button class="no-button" id="logout">Logout</button>
+        {{else}}
+       <a style="text-decoration: underline;"id="login"  href="/login">Login</a>
+        {{/if}}
+      
+     </h1>
+    </header>
+
+<div id='blog' class="col-md-7">
+  <h3 id="heading">Name</h3>
+  <input value={{dashboard.name}} type="text" id="tname" name="tname"><br><br>
+  <h3 id="heading">Content</h3>
+  <input value="{{dashboard.description}}" type="text" id="tdesc" name="tdesc"></input>
+  <br><br>
+  <button id="update">Update Post</button>
+  <button id="delete">Delete Post</button>
+  </div>
+  <script src='/js/dashboardsubmit.js'></script>

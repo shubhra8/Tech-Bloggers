@@ -1,0 +1,34 @@
+    <header style="flex-direction: row;" class="display-flex justify-space-between align-center p-2"></header>
+    <h1>
+        <a style="text-decoration: underline;" href="/home">Home</a>
+      
+ 
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <button class="no-button" id="logout">Logout</button>
+        {{else}}
+       <a style="text-decoration: underline;"id="login"  href="/login">Login</a>
+        {{/if}}
+      
+     </h1>
+    </header>
+   
+   
+<form class="form new-dashboard-form">
+   <h1 style="color:rgb(61, 61, 223); text-align:center;">New Post</h1>
+    <br>
+      <div class="form-group">
+        <label for="project-name">Dashboard name:</label>
+        <input id="tname" class="form-input" type="text"  name="name" />
+      </div>
+      <br>
+        <div class="form-group">
+        <label for="project-name">Description:</label>
+        <input id="tdesc" class="form-input" type="text"  name="name" />
+      </div>
+      <br>
+       <div class="form-group">
+        <button class="btn btn-primary" type="submit" id="create">Create</button>
+      </div>
+      </form>
+      <script src='/js/dashclick.js'></script>

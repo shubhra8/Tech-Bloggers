@@ -1,0 +1,35 @@
+
+  <header style="flex-direction: row;" class="display-flex justify-space-between align-center p-2">
+      <h1>
+        <a id="home1" style="text-decoration: underline;" href="/">Home</a>
+        <a style="text-decoration: underline;">Tech Bloggers</a>
+     
+        {{#if logged_in}}
+        <a style="text-decoration: underline;" href="#">profile</a> 
+        <button class="no-button" id="logout">Logout</button>
+        {{else}}
+       <a style="text-decoration: underline;" id="login"  href="/login">Login</a>
+        {{/if}}
+      
+      </h1>
+    </header>
+
+
+ <div class="flex-column justify-space-around">
+{{#each dashboards as |dashboard| }}
+  <div id='blog' class="col-md-7">
+    <div style="background-color: rgb(146, 146, 178);">
+   <h2><a href="/dashboard/post/{{dashboard.id}}">{{dashboard.name}}</a><p id="posted">posted by {{user.name}}@{{format_date dashboard.date_created}}</p></h2>
+   </div>
+    <p id="desc">
+      {{dashboard.description}}
+    </p>
+    
+  </div>
+</div>
+{{/each}}
+{{#if logged_in}}
+  
+
+<script src="/js/dashclick.js"></script>
+{{/if}}

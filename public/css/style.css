@@ -1,0 +1,175 @@
+body{
+background-color: #97b9c554;
+}
+h2{
+   margin-top: auto;
+   color: rgb(61, 61, 223);
+}
+a{
+color: rgb(61, 61, 223);
+text-decoration: none;
+}
+a:hover{
+   color: rgb(0, 0, 0)
+}
+nav{
+   margin-bottom: 20px;
+}
+header{
+   text-align: center;
+}
+#blog{
+   border: 2px;
+   border-style:solid; 
+   margin-top: 10px;
+   width:1200px;
+   height:120px;
+   margin-left: 150px;
+   margin-right: 100px;
+}
+#blog1 {
+   border: 2px;
+   border-style: solid;
+   margin-left: 15px;
+   width: 800px;
+   height: 120px;
+   
+}
+#heading{
+   margin:11px;
+}
+#heading1 {
+   margin: 0px;
+}
+#post{
+   
+   margin: 10px;
+}
+#desc{
+   margin: 10px;
+}
+#newpost{
+   width:fit-content;
+   text-align: center;
+   height: 40px;
+   background-color: rgb(99, 99, 225);
+   font-weight: bold;
+   margin-right: 30px;
+   color: aliceblue;
+   float: right;
+}
+#create{
+      width: 150px;
+         text-align: center;
+         height: 40px;
+         background-color: rgb(99, 99, 225);
+         font-weight: bold;
+         margin-right: 700px;
+         color: aliceblue;
+         float: right;
+}
+#create1 {
+   width: 150px;
+   text-align: center;
+   height: 40px;
+   background-color: rgb(99, 99, 225);
+   font-weight: bold;
+   margin-right: 30px;
+   color: aliceblue;
+   float: right;
+}
+#tdesc{
+   width: 500px;
+   height: 100px;
+   margin-left: 15px;
+   size: 50;
+}
+#tname{
+   margin-left: 15px;
+      width: 350px;
+      height: 30px;
+}
+#update{
+   margin-bottom: 25px;
+   margin-left: 15px;
+   background-color: rgb(99, 99, 225);
+   font-weight: bold;
+}
+#delete{
+   margin-bottom: 25px;
+   margin-left: 15px;
+   background-color: rgb(225, 80, 80);
+   font-weight: bold;
+}
+#nav{
+   float: right;
+}
+#comment{
+   margin-left: 0px;
+}
+#profile{
+   float: left;
+   margin-left: 30px;
+      
+}
+#login {
+   float: right;
+   margin-right: 50px;
+   
+}
+#logout{
+   float:right;
+   width: 120px;
+   height: 40px;
+   background-color: rgb(99, 99, 225);
+   font-weight: bold;
+   margin-right: 30px;
+   color: aliceblue;
+   /* margin-top:30px; */
+}
+
+#lheader{
+
+         text-align: center;
+         width: 500px;
+         margin-left: 500px;
+         height: 40px;
+         
+}
+
+h2:hover{
+   background-color: rgb(107, 107, 159);
+}
+
+#ldiv{
+   text-align: center;
+   margin-top: 100px;
+   margin-right: 400px;
+   }
+
+.form-group{
+   margin-left: 400px;
+}
+#userpost{
+   border-style:groove;
+      border-width: 0.5px;
+    height:100px;
+   margin-left: 10px;
+}
+#home{
+   float: left ;
+   margin-bottom: 0px;
+}
+#home1 {
+   float: left;
+   margin-bottom: 0px;
+}
+#posted{
+   margin-top: 0px;
+   float:right;
+   font-size: 20px;
+}
+#row1{
+   background-color: #5b808d54;
+   
+}

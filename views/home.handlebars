@@ -1,0 +1,34 @@
+  <header style="flex-direction: row;" class="display-flex justify-space-between align-center p-2">
+      <h1>
+        <a href="/">Tech Bloggers!</a>
+         <a id="home1" href="/api/dashboard/profile">Profile</a> 
+        <button class="no-button" id="logout">logout</button>
+      </h1>   
+        
+      
+    </header>
+
+ <div class="flex-column justify-space-around">
+  {{!-- <main class="container container-fluid mt-5"></main> --}}
+{{#each dashboards as |dashboard| }}
+  <div id='blog' class="col-md-7">
+   <div style="background-color: rgb(146, 146, 178);">
+   <h2><a style="text-decoration: none;" href="/dashboard/post/{{dashboard.id}}">{{dashboard.name}}</a><p id="posted">posted by {{user.name}}@{{format_date dashboard.date_created}}</p></h4>
+    </div>
+    <p id="desc">
+      {{dashboard.description}}
+    </p>
+  </div>
+</div>
+{{/each}}
+</main>
+<script src="/js/logout.js"></script>
+   {{#if logged_in}}
+ 
+  {{/if}}
+</div>
+{{!-- <script src='/js/dashclick.js'></script> --}}
+{{!-- {{#if logged_in}}
+<script src="/js/dashclick.js"></script>
+{{/if}}
+<script src="/js/logout.js"></script> --}}
