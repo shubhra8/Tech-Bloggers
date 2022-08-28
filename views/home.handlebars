@@ -13,7 +13,7 @@
 {{#each dashboards as |dashboard| }}
   <div id='blog' class="col-md-7">
    <div style="background-color: rgb(146, 146, 178);">
-   <h2><a style="text-decoration: none;" href="/dashboard/post/{{dashboard.id}}">{{dashboard.name}}</a><p id="posted">posted by {{user.name}}@{{format_date dashboard.date_created}}</p></h4>
+   <h2><a style="text-decoration: none;" href="/dashboard/post/{{dashboard.id}}">{{dashboard.name}}</a><p id="posted">posted by {{user.name}}@{{format_date dashboard.date_created}}</p></h2>
     </div>
     <p id="desc">
       {{dashboard.description}}

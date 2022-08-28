@@ -13,24 +13,28 @@
      </h1>
     </header>
 <div id='blog1' class="col-md-7">
-  <h3 style="background-color:rgb(115, 104, 148)" id="heading1">{{name}}</h3>
+  <h3 style="background-color:rgb(115, 104, 148)" id="heading1">{{name}}<p id="posted">posted by {{user.name}}@{{format_date date_created}}</p></h3> 
+  {{!-- <h3><a style="text-decoration: none;" href="/dashboard/post/{{dashboard.id}}">{{dashboard.name}}</a><p id="posted">posted by {{user.name}}@{{format_date dashboard.date_created}}</p></h3> --}}
   <br>
   <h3 id="heading">{{description}}</h3>
   {{!-- <p>{{date_created}}</p> --}}
    </div>
    <br>
    <br>
+   {{#if logged_in}}
    <div id="comment" class="col-md-7">
     <input type="text" id="tdesc" name="tdesc"></input>
     <br><br>
     <button id="addComment">Add Comments</button>
    </div>
    <br>
+     {{/if}}
+    
    <div class="flex-column justify-space-around"></div>
     {{#each comments as |comment|}}
     <div id='userpost' class="col-md-7">
         <p>{{comment.comment_text}}</span></p> 
-        <h4 value={{user_id}}>{{user.name}}</h4>
+        <h4 value={{user_id}}>posted by {{user.name}} </h4>
         
         
     </div>  
