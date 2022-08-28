@@ -22,7 +22,10 @@ Dashboard.init(
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
+<<<<<<< HEAD
       
+=======
+>>>>>>> 76164630ef35cf1fdbafcabd9e765ac72e7f7e7e
     },
      user_id: {
       type: DataTypes.INTEGER,
